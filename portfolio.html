@@ -19,8 +19,8 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="main-header section">
-      <div class="container">
+    <header class="main-header">
+      <div class="header-container container">
         <nav class="nav-header">
           <a href="" class="logo"><span class="web-logo">WEB</span>STUDIO</a>
           <ul class="menu list">
@@ -34,26 +34,100 @@
           </ul>
 
           <ul class="contact list">
-            <li class="menu-item">
+            <li class="contact-menu-item">
               <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="menu-item">
+            <li class="contact-menu-item">
               <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open__icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu__container">
+          <button class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu__close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-item">
+              <a href="./index.html" class="mobile-menu-link link">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#" class="active-page mobile-menu-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a href="" class="mobile-menu-link link">Contacts</a>
+            </li>
+          </ul>
+          <div class="mobile-menu-bottom">
+            <ul class="mobile-contact-list list">
+              <li class="mobile-contact-item">
+                <a href="tel:+110001111111" class="active-page mobile-tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="email-contact-item">
+                <a href="mailto:info@devstudio.com" class="mobile-email link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <div class="social-mobile social">
+              <ul class="social-networks list">
+                <li class="social-item">
+                  <a class="team-member-social-link" href="">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="" class="team-member-social-link">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="" class="team-member-social-link">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="" class="team-member-social-link">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
     <!-- MAIN -->
     <main>
-      <section>
-        <h1 hidden>Projects</h1>
+      <section class="section-portfolio">
+        <div class="container">
+          <h1 hidden>Projects</h1>
 
-        <!-- Radio Buttons -->
-        <!-- <div>
+          <!-- Radio Buttons -->
+          <!-- <div>
           <input
             type="radio"
             id="projectChoice1"
@@ -87,28 +161,29 @@
           <label for="projectChoice5">Marketing</label>
         </div> -->
 
-        <ul class="filter-btn-list list">
-          <li class="filter-btn-item">
-            <button type="button" class="filter-button button">All</button>
-          </li>
-          <li class="filter-btn-item">
-            <button type="button" class="filter-button button">Web Site</button>
-          </li>
-          <li class="filter-btn-item">
-            <button type="button" class="filter-button button">App</button>
-          </li>
-          <li class="filter-btn-item">
-            <button type="button" class="filter-button button">Design</button>
-          </li>
-          <li class="filter-btn-item">
-            <button type="button" class="filter-button button">
-              Marketing
-            </button>
-          </li>
-        </ul>
+          <ul class="filter-btn-list list">
+            <li class="filter-btn-item">
+              <button type="button" class="filter-button button">All</button>
+            </li>
+            <li class="filter-btn-item">
+              <button type="button" class="filter-button button">
+                Web Site
+              </button>
+            </li>
+            <li class="filter-btn-item">
+              <button type="button" class="filter-button button">App</button>
+            </li>
+            <li class="filter-btn-item">
+              <button type="button" class="filter-button button">Design</button>
+            </li>
+            <li class="filter-btn-item">
+              <button type="button" class="filter-button button">
+                Marketing
+              </button>
+            </li>
+          </ul>
 
-        <!-- Projects Portfolio List -->
-        <div class="container">
+          <!-- Projects Portfolio List -->
           <ul class="projects list">
             <li class="project-item">
               <a href="" class="project-item-link link"
@@ -377,5 +452,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
