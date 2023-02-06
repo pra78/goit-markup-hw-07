@@ -612,20 +612,55 @@ body {
     background-color: var(--cloud-color);
 }
 
-/* .team-member-card {
+.team-member-card {
     background-color: var(--white-color);
     box-shadow: 
         0px 1px 6px rgba(46, 47, 66, 0.08), 
         0px 1px 1px rgba(46, 47, 66, 0.16), 
         0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
+}
 
-/* .team-list {
-    display: flex;
-    justify-content: space-between;
-} */
+@media screen and (min-width: 320px) {
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-/* .team-member-details {
+    .team-member-card:not(:last-child) {
+        margin-bottom: 72px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .team-member-card:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .team-member-card:not(:nth-child(2n)) {
+        margin-right: 24px;
+    }
+
+    .team-member-card:not(:nth-child(n + 3)) {
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team-list {
+        justify-content: space-between;
+    }
+
+    .team-member-card:not(:nth-child(4n)) {
+        margin-right: 24px;
+    }
+
+   .team-member-card:not(:nth-child(n + 3)) {
+       margin-bottom: 0;
+   }
+}
+
+.team-member-details {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
@@ -635,7 +670,7 @@ body {
 .social {
     margin-top: 8px;
 }
-*/
+
 .social-networks {
     display: flex;
     justify-content: space-between;
@@ -668,10 +703,6 @@ body {
 }
 
 /* ========= Customers ========= */
-/* .customers-section {
-    padding-top: 130px;
-}
-
 .customers-list {
     display: flex;
     justify-content: center;
@@ -680,10 +711,43 @@ body {
 .customer-item {
     width: 168px;
     height: 88px;
+    margin-bottom: 72px;
 }
 
-.customer-item:not(:last-child) {
-    margin-right: 24px;
+@media screen and (min-width: 320px) {
+    .customers-section {
+        max-width: 415px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .customers-list {
+        flex-wrap: wrap;
+    }
+
+    .customer-item:not(:nth-child(2n)) {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .customers-section {
+        max-width: 680px;
+    }
+
+    .customer-item:not(:nth-child(3n)) {
+        margin-right: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .customers-section {
+        max-width: 1440px;
+    }
+
+    .customer-item:not(:last-child) {
+        margin-right: 24px;
+    }
 }
 
 .customer-logo {
@@ -711,7 +775,7 @@ body {
 .customer-logo:hover .customer-logo-icon,
 .customer-logo:focus .customer-logo-icon {
     fill: var(--ocean-color);
-} */
+}
 
 /* ========= Footer ========= */
 /* .footer-section {
