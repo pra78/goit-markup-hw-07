@@ -876,9 +876,9 @@ body {
     margin-bottom: 0;
   } */
 
-  /* .customer-item:not(:nth-child(n + 4)) {
+  .customer-item:not(:nth-child(n + 4)) {
     margin-bottom: 0;
-  } */
+  }
 }
 
 .customer-logo {
