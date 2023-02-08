@@ -356,7 +356,8 @@ body {
   }
 
   .mobile-tel {
-    font-size: 36px;
+    font-size: 27px;
+    /* font-size: 36px; */
     line-height: 1.11;
     font-weight: 600;
     color: var(--iris-color);
@@ -515,6 +516,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 112px;
+  padding-bottom: 112px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -528,7 +530,6 @@ body {
       ),
       url("../images/hero-image-mobile.jpg");
     width: 100%;
-    padding-bottom: 112px;
   }
 
   .mobile-menu-link {
@@ -829,8 +830,8 @@ body {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .customers-section {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
 
   .customer-item {
@@ -847,11 +848,11 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .customers-section {
-    max-width: 415px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  /* .customers-section { */
+    /* max-width: 415px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+  /* } */
 
   .customers-list {
     flex-wrap: wrap;
@@ -867,9 +868,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .customers-section {
-    max-width: 680px;
-  }
+  /* .customers-section { */
+    /* max-width: 680px; */
+  /* } */
 
   /* .customer-item:not(:nth-child(2n)) {
     margin-right: 0;
@@ -889,9 +890,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .customers-section {
-    max-width: 1440px;
-  }
+  /* .customers-section { */
+    /* max-width: 1440px; */
+  /* } */
 
   /* .customer-item {
     margin-bottom: 0;
@@ -1252,21 +1253,21 @@ body {
 @media screen and (min-width: 480px) {
   .modal {
     width: 408px;
-    height: 584px;
+    height: 586px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
-    height: 584px;
+    height: 586px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 408px;
-    height: 584px;
+    height: 586px;
   }
 }
 
