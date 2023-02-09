@@ -423,7 +423,7 @@ body {
     line-height: 1.2;
   }
 
-  .social {
+  .social-mobile.social {
     margin-top: 0;
   }
 
@@ -1171,6 +1171,7 @@ body {
 .filter-btn-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   /* margin-top: 96px; */
   margin-bottom: 72px;
   margin-left: auto;
